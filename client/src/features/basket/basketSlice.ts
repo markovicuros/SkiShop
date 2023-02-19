@@ -61,7 +61,7 @@ export const basketSlice = createSlice({
         setBasket: (state, action) => {
             state.basket = action.payload
         },
-        cleatBasket: (state) => {
+        clearBasket: (state) => {
             state.basket = null;
         }
     },
@@ -97,4 +97,4 @@ export const basketSlice = createSlice({
     })
 })
 
-export const {setBasket, cleatBasket} = basketSlice.actions;
+export const {setBasket, clearBasket} = basketSlice.actions;
